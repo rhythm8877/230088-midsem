@@ -1,0 +1,177 @@
+{
+  "student_metadata": {
+    "name": "Rhythm Jain",
+    "roll_number": "230088",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-02"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Locating the official paper and checking dataset status.",
+      "prompt": "Learning Hierarchical Invariant Spatio-Temporal Features for Action Recognition by Quoc V. Le, Will Y. Zou, and Andrew Y. Ng official research paper link and also is the dataset available for this research paper publically?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Provided the official CVPR 2011 links and confirmed the use of public benchmarks.",
+      "student_verification": "Cross-referenced the link with the Stanford AI lab website to ensure it was the final version.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Verifying the authenticity of a specific resource link.",
+      "prompt": "is this the official research paper of Learning hierarchical invariant spatio-temporal features for action recognition with independent subspace analysis. https://ai.stanford.edu/~syyeung/resources/LeZouYeungNg11.pdf",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that the PDF link provided was indeed the official publication.",
+      "student_verification": "Verified the authors and publication venue (CVPR) listed on the title page of the PDF.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Assessing feasibility for reproduction on limited hardware.",
+      "prompt": "is there any toy dataset for this paper?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Identified the KTH dataset as a 'toy' alternative and suggested using pre-trained filters.",
+      "student_verification": "Checked the KTH website; the dataset size is manageable for a standard laptop.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Understanding the classification component of the architecture.",
+      "prompt": "is it related to SVM?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Clarified that SVM acts as the final classifier for the learned ISA features.",
+      "student_verification": "Found references to Linear and Chi-squared SVMs in the experimental section of the paper.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Categorizing the paper's contribution for the selection form.",
+      "prompt": "Is the primary contribution of this paper methodological?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed that the unsupervised learning method (ISA) is the main novelty.",
+      "student_verification": "The paper focuses heavily on the ISA algorithm derivation rather than just a new application.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 6,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Confirming data transparency and accessibility.",
+      "prompt": "Does the paper use publicly accessible data OR allow reproduction on a toy/synthetic dataset?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Reiterated that Hollywood2, KTH, and UCF11 are open for research use.",
+      "student_verification": "Successfully accessed the UCF11 download page online.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 7,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Evaluating hardware and ethical constraints.",
+      "prompt": "Does the paper require any of the following? Special approval / restricted access dataset, Proprietary / industry data, Medical / clinical data, Heavy compute (GPU / cluster), None of the above",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Identified that while a cluster was used in 2011, modern PCs can handle the task.",
+      "student_verification": "Confirmed that ISA training on small patches is computationally efficient based on community benchmarks.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 8,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Synthesizing a justification for paper selection.",
+      "prompt": "Why did you choose this paper?",
+      "llm_response_used": "Partially",
+      "how_it_helped": "Provided an academic rationale focusing on the shift from hand-crafted to learned features.",
+      "student_verification": "Modified the response to better match my personal interest in unsupervised learning.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 9,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Connecting paper concepts to course prerequisites (SVM).",
+      "prompt": "how this paper is related to svm so that i can answer accordingly for why did i choose this paper",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Explained the transition from manual feature engineering to automated feature learning for SVMs.",
+      "student_verification": "Confirmed this aligns with the 'Feature Engineering' module of the course.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 10,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Flash",
+      "purpose": "Confirming the student's understanding of academic integrity.",
+      "prompt": "Do you understand that code obsolescence, dataset access, and reproducibility are your responsibility?",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Acknowledged the risk of using 2011 MATLAB code in a modern Python environment.",
+      "student_verification": "I have looked up Python implementations of ISA (e.g., in scikit-learn or GitHub) to ensure I can proceed.",
+      "confidence_level": 4
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 9,
+      "prompt": "how this paper is related to svm so that i can answer accordingly for why did i choose this paper",
+      "why_important": "It connected the advanced unsupervised learning methods in the paper to the foundational SVM concepts I already understand."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt": "is there any toy dataset for this paper?",
+      "why_important": "Crucial for determining if I could actually run experiments for the project on my own laptop."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 5,
+      "prompt": "Is the primary contribution of this paper methodological?",
+      "why_important": "Ensured the paper met the requirements of an 'Advanced Machine Learning' course which prioritizes algorithmic novelty."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 1,
+      "prompt": "Learning Hierarchical Invariant Spatio-Temporal Features for Action Recognition by Quoc V. Le, Will Y. Zou, and Andrew Y. Ng official research paper link and also is the dataset available for this research paper publically?",
+      "why_important": "The fundamental first step to verify the existence of the source material and its open-source nature."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 7,
+      "prompt": "Does the paper require any of the following? Special approval / restricted access dataset, Proprietary / industry data, Medical / clinical data, Heavy compute (GPU / cluster), None of the above",
+      "why_important": "Helped rule out papers that would be impossible to reproduce due to data privacy or lack of supercomputing access."
+    }
+  ],
+  "student declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding acknowledged": true,
+    "signature": "Rhythm Jain",
+    "date": "2026-03-02"
+  }
+}
