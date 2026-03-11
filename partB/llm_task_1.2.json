@@ -1,0 +1,40 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Identifying key assumptions specific to the ISA method.",
+            "prompt": "What are the key assumptions that the ISA method for action recognition depends on — specifically assumptions embedded in the architecture or algorithm, not generic ML assumptions?",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Suggested assumptions about local patches, invariance pooling, and unsupervised feature transferability.",
+            "student_verification": "Verified each assumption against specific sections and equations in the paper. Wrote violation scenarios based on my own reasoning.",
+            "confidence_level": 4,
+            "task_tag": "Task 1.2",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "What are the key assumptions that the ISA method for action recognition depends on?",
+            "why_important": "Helped identify paper-specific assumptions rather than generic ML assumptions."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 1.2.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

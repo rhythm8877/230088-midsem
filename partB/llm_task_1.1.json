@@ -1,0 +1,40 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Understanding the core ISA algorithm to describe its step-by-step architecture.",
+            "prompt": "Explain the step-by-step method of the ISA paper by Le et al. (CVPR 2011) for action recognition — from input to final output.",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Provided a structured breakdown of the ISA pipeline: patch extraction, PCA whitening, ISA learning, convolution, stacking, and SVM classification.",
+            "student_verification": "Cross-referenced each step with the original paper sections and equations to ensure accuracy.",
+            "confidence_level": 4,
+            "task_tag": "Task 1.1",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "Explain the step-by-step method of the ISA paper by Le et al. (CVPR 2011) for action recognition — from input to final output.",
+            "why_important": "Helped structure the complete pipeline description with proper section references."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 1.1.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

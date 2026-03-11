@@ -1,0 +1,61 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Designing a synthetic dataset appropriate for testing ISA features.",
+            "prompt": "Design a synthetic spatio-temporal video dataset for testing ISA feature learning. The dataset should have distinct motion classes that are appropriate for evaluating the ISA algorithm from Le et al. CVPR 2011.",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Suggested using simple geometric motions (translation, rotation, scaling) as action classes.",
+            "student_verification": "Verified that these motion types match the kind of spatio-temporal patterns ISA is designed to detect, based on the paper's description of learned filters.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Generating Python code for synthetic video clip generation.",
+            "prompt": "Write a Python function to generate synthetic video clips with different motion patterns (horizontal, vertical, rotation, zoom, diagonal, flicker) as numpy arrays.",
+            "llm_response_used": "Yes",
+            "how_it_helped": "Generated the generate_clip function with parameterized motion patterns.",
+            "student_verification": "Tested the generated clips visually to ensure each motion type was visually distinct.",
+            "student_modification": "Modified patch sizes and added random noise background for realism.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.1",
+            "code_used_verbatim": true
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 2,
+            "prompt": "Write a Python function to generate synthetic video clips with different motion patterns.",
+            "why_important": "Core dataset generation code that all subsequent tasks depend on."
+        },
+        {
+            "rank": 2,
+            "interaction_id": 1,
+            "prompt": "Design a synthetic spatio-temporal video dataset for testing ISA feature learning.",
+            "why_important": "Informed the choice of action classes and dataset design."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.1.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

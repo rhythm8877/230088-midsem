@@ -1,0 +1,61 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Designing the ablation experiments for ISA components.",
+            "prompt": "What are suitable ablation experiments to test the contribution of specific ISA components — subspace pooling and PCA whitening?",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Suggested removing pooling (falling back to ICA) and removing whitening as two clear ablations.",
+            "student_verification": "Verified that these are core components by referencing Section 2.1 and Equation 1 in the paper.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.1 Component 1",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Implementing the ablated versions of the ISA pipeline.",
+            "prompt": "Write code to run the ISA pipeline without subspace pooling (using raw ICA features) and without PCA whitening, then compare performance.",
+            "llm_response_used": "Yes",
+            "how_it_helped": "Generated the ablation code with proper feature extraction for both ablated versions.",
+            "student_verification": "Verified that the ablated versions correctly remove only the target component while keeping everything else identical.",
+            "student_modification": "Added error handling for ICA convergence failure without whitening. Added visualization code.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.1 Component 2",
+            "code_used_verbatim": true
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "What are suitable ablation experiments to test ISA components?",
+            "why_important": "Defined the structure of the ablation study."
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "Write code to run the ISA pipeline without subspace pooling and without PCA whitening.",
+            "why_important": "Core ablation implementation code."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 3.1.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

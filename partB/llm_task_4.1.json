@@ -1,0 +1,40 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Structuring the 4-page report to cover all required sections.",
+            "prompt": "Help me structure a 4-page report for Part B of the Advanced ML mid-semester, covering: paper summary, reproduction setup and result, ablation findings, failure mode discussion, and final reflection.",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Provided a section-by-section outline with approximate space allocation.",
+            "student_verification": "Ensured each section corresponds to the marks breakdown: 3 marks each for summary, reproduction, ablation, failure mode, and reflection.",
+            "confidence_level": 4,
+            "task_tag": "Task 4.1",
+            "code_used_verbatim": false
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "Help me structure a 4-page report covering paper summary, reproduction, ablation, failure mode, and reflection.",
+            "why_important": "Ensured the report covers all required sections within the page limit."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 4.1.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

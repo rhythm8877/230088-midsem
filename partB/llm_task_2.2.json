@@ -1,0 +1,62 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Implementing the ISA algorithm using scikit-learn components.",
+            "prompt": "Implement the ISA (Independent Subspace Analysis) feature learning pipeline from the Le et al. CVPR 2011 paper using scikit-learn's PCA and FastICA. Include patch extraction, PCA whitening, ICA, subspace pooling, and SVM classification.",
+            "llm_response_used": "Yes",
+            "how_it_helped": "Generated the full pipeline code including extract_patches, pca_whiten, isa_pool, and extract_clip_features functions.",
+            "student_verification": "Verified each function against the paper's description: PCA whitening matches Section 2.1, ISA pooling matches Equation 1, feature extraction matches Section 3.",
+            "student_modification": "Added detailed docstrings and paper references to each function. Adjusted hyperparameters for CPU feasibility.",
+            "confidence_level": 4,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Visualizing learned ICA/ISA filters.",
+            "prompt": "How do I visualize the learned ISA filters by projecting ICA components back to pixel space through PCA?",
+            "llm_response_used": "Yes",
+            "how_it_helped": "Showed how to multiply ICA mixing matrix by PCA components to reconstruct filters in pixel space.",
+            "student_verification": "Verified the math: W_pixel = W_ica @ PCA_components gives filters in original space.",
+            "confidence_level": 5,
+            "task_tag": "Task 2.2",
+            "code_used_verbatim": true,
+            "student_modification": "Added subspace labels and formatted the subplot grid."
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "Implement the ISA feature learning pipeline from Le et al. CVPR 2011 using scikit-learn.",
+            "why_important": "The core implementation of the method being reproduced."
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "How do I visualize learned ISA filters by projecting ICA components back to pixel space?",
+            "why_important": "Essential for demonstrating what the ISA model has learned."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 2.2.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}

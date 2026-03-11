@@ -1,0 +1,61 @@
+{
+    "student_metadata": {
+        "name": "Rhythm Jain",
+        "roll_number": "230088",
+        "course": "Advanced Machine Learning",
+        "exam": "Mid-Semester Examination",
+        "part": "Part B",
+        "submission_date": "2026-03-11"
+    },
+    "full_llm_interaction_log": [
+        {
+            "interaction_id": 1,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Designing a failure mode scenario for the ISA method.",
+            "prompt": "Design a scenario where the ISA method from Le et al. CVPR 2011 would fail — specifically related to its assumption about local patches being sufficient for action discrimination.",
+            "llm_response_used": "Partially",
+            "how_it_helped": "Suggested temporal ordering as a failure scenario where local patches are identical across classes.",
+            "student_verification": "Verified that this connects to Assumption 1 from Task 1.2 and that ISA's pooling would indeed destroy temporal order information.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": false
+        },
+        {
+            "interaction_id": 2,
+            "date": "2026-03-11",
+            "tool_name": "Antigravity (Gemini)",
+            "model": "Gemini",
+            "purpose": "Writing the compound motion clip generation code.",
+            "prompt": "Write a function to generate video clips with compound motions (vertical-then-horizontal vs. horizontal-then-vertical) for testing temporal ordering.",
+            "llm_response_used": "Yes",
+            "how_it_helped": "Generated the generate_compound_clip function.",
+            "student_verification": "Visualized the generated clips to confirm both classes contain identical local motions in different order.",
+            "student_modification": "Adjusted motion parameters to ensure the classes are truly indistinguishable at the local patch level.",
+            "confidence_level": 4,
+            "task_tag": "Task 3.2",
+            "code_used_verbatim": true
+        }
+    ],
+    "top_5_prompts": [
+        {
+            "rank": 1,
+            "interaction_id": 1,
+            "prompt": "Design a scenario where the ISA method would fail — related to its local patch assumption.",
+            "why_important": "Defined the failure mode that connects to the paper's core assumptions."
+        },
+        {
+            "rank": 2,
+            "interaction_id": 2,
+            "prompt": "Write a function to generate video clips with compound motions for testing temporal ordering.",
+            "why_important": "Generated the failure dataset code."
+        }
+    ],
+    "student_declaration": {
+        "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Task 3.2.",
+        "understanding_acknowledged": true,
+        "signature": "Rhythm Jain",
+        "date": "2026-03-11"
+    }
+}
